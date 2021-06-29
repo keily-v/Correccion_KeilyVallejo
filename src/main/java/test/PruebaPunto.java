@@ -26,11 +26,11 @@ public class PruebaPunto {
     public static void generarPuntos(Punto puntos[]) {
 
         int x=0, y=0;
-        System.out.println("Digite en cero en x al igual que en y. Para ubicarse en el origen");
+        
         for (int i = 0; i < puntos.length; i++) {
             int mover = ((int) (Math.random() * 4 + 1));
 
-            System.out.println("¿Qué cantidad desea que se mueva el punto en el movimiento : " +(i + 1) + "?");
+            System.out.println("¿Qué cantidad desea que se mueva el punto en el movimiento : " +(i+1) + "?");
             int cantidadmovimientos = datos.nextInt();
             if (mover == 1) {
                 y = y + cantidadmovimientos;
