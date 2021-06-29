@@ -26,7 +26,7 @@ public class PruebaPunto {
     public static void generarPuntos(Punto puntos[]) {
 
         int x=0, y=0;
-
+        System.out.println("Digite en cero en x al igual que en y. Para ubicarse en el origen");
         for (int i = 0; i < puntos.length; i++) {
             int mover = ((int) (Math.random() * 4 + 1));
 
@@ -55,8 +55,7 @@ public class PruebaPunto {
             
             for (int j = 0; j <1; j++) {
                 
-                puntos[i].setCalcularDistancia(puntos[j]);
-                System.out.println("La distancia es:" + puntos[i].getCalcularDistancia());
+                System.out.println("La distancia es:" + puntos[j].calcularDistancia(puntos[i]));
                 
             }
 
