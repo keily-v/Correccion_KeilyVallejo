@@ -54,8 +54,15 @@ public class PruebaPunto {
             puntos[i] = new Punto(x, y);
             
             for (int j = 0; j < 1; j++) {
+                System.out.println("El punto se encuntra en el origen (0,0)");
+                x=y=0;
+                System.out.println("goli"+puntos[i]);
+                
+                
+                /*
                 puntos[j].setCalcularDistancia(puntos[i]);
                 System.out.println("La distancia es:" + puntos[j].getCalcularDistancia());
+*/
             }
 
         }

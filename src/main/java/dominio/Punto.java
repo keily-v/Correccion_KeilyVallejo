@@ -34,17 +34,11 @@ public class Punto {
         return calcularDistancia;
     }
     public void setCalcularDistancia(Punto P2) {
-        
         int x2=P2.getX();
         int y2=P2.getY();
         int x1=this.x;
         int y1=this.y;
-        int resta1,resta2;
-        resta1=x2-x1;
-        resta2=y2-y1;
-        double c1 = Math.pow(resta1,2);
-        double c2 = Math.pow(resta2,2);
-        this.calcularDistancia = Math.sqrt(c1+c2);
+        this.calcularDistancia = Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
     }
 
 
