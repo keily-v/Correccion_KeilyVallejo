@@ -41,9 +41,7 @@ public class Punto {
         int y1=this.y;
         int resta1,resta2;
         resta1=x2-x1;
-        System.out.println("resta1 :"+resta1);
         resta2=y2-y1;
-        System.out.println("resta 2:"+resta2);
         double c1 = Math.pow(resta1,2);
         double c2 = Math.pow(resta2,2);
         this.calcularDistancia = Math.sqrt(c1+c2);
